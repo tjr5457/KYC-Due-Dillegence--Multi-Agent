@@ -1,0 +1,29 @@
+# ─── AMD ROCm vLLM inference server ──────────────────────────────────────────
+# Install the ROCm build separately — see README for the exact pip command.
+# vllm                        # uncomment after AMD ROCm wheel is installed
+
+# ─── LLM / Agent framework ────────────────────────────────────────────────────
+langchain>=0.2.0
+langgraph>=0.1.0
+langchain-openai>=0.1.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+openai>=1.30.0                 # langchain-openai depends on this
+
+# ─── Backend — FastAPI stack ──────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+python-multipart>=0.0.9
+aiofiles>=23.2.1
+httpx>=0.27.0
+nest-asyncio>=1.6.0
+
+# ─── Frontend — Streamlit ─────────────────────────────────────────────────────
+streamlit>=1.35.0
+plotly>=5.22.0
+pandas>=2.2.0
+fpdf2>=2.7.0
+
+# ─── HTTP client (used by frontend utils) ────────────────────────────────────
+requests>=2.32.0
